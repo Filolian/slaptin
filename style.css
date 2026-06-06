@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+  user-select: none;
+}
+
+#bg {
+  position: fixed;
+  inset: 0;
+  background-image: url('sapha.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+#logo {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-family: 'Fredoka One', cursive;
+  font-size: 72px;
+  color: white;
+  text-shadow:
+    1px 1px 0 #b0b0b0,
+    -1px 1px 0 #b0b0b0,
+    1px -1px 0 #b0b0b0,
+    -1px -1px 0 #b0b0b0,
+    2px 2px 0 #b0b0b0,
+    -2px 2px 0 #b0b0b0,
+    2px -2px 0 #b0b0b0,
+    -2px -2px 0 #b0b0b0;
+  white-space: nowrap;
+  animation: bounce-lr 2.5s ease-in-out infinite;
+}
+
+@keyframes bounce-lr {
+  0%   { transform: translateX(-50%) translateX(0px); }
+  25%  { transform: translateX(-50%) translateX(-30px); }
+  75%  { transform: translateX(-50%) translateX(30px); }
+  100% { transform: translateX(-50%) translateX(0px); }
+}
+
+#counter {
+  position: fixed;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-family: 'Fredoka One', cursive;
+  font-size: 72px;
+  color: white;
+  text-shadow:
+    1px 1px 0 #b0b0b0,
+    -1px 1px 0 #b0b0b0,
+    1px -1px 0 #b0b0b0,
+    -1px -1px 0 #b0b0b0,
+    2px 2px 0 #b0b0b0,
+    -2px 2px 0 #b0b0b0,
+    2px -2px 0 #b0b0b0,
+    -2px -2px 0 #b0b0b0;
+  white-space: nowrap;
+}
+
+#character {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  height: 85vh;
+  max-height: 750px;
+  object-fit: contain;
+  cursor: pointer;
+}
